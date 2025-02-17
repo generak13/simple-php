@@ -18,7 +18,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Run tests
-                vendor/bin/phpunit tests
+                sh 'vendor/bin/phpunit tests'
             }
         }
 
